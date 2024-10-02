@@ -98,9 +98,30 @@ body {
 }
 .grid .item:nth-child(3) {
     grid-area: sch;
+    background-color: hsl(254, 88%, 90%);
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid .item.item:nth-child(3) img {
+    position: absolute;
+    height: auto;
+    right: -100px;
 }
 .grid .item:nth-child(4) {
     grid-area: ai;
+    background-color: hsl(39, 100%, 71%);
+    padding: 20px;
+    border-radius: 1rem;
+}
+.grid .item.item:nth-child(4) h2 {
+    font-family: 'DMSans-Medium';
+    font-size: 50px;
+
 }
 .grid .item:nth-child(5) {
     grid-area: man;
