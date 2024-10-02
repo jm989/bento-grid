@@ -18,12 +18,15 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: #f2f2f2;
+}
+h2, h3 {
+    font-weight: 100;
 }
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-template-rows: 2fr 0 0 2fr;
-    border: solid 1px black;
+    grid-template-rows: 2fr 1fr 1fr 2fr;
     height: 80vh;
     gap: 30px;
     width: 80vw;
@@ -55,7 +58,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    border-radius: 11px;
+    border-radius: 1rem;
     
 } 
 .grid .item:nth-child(1) h2 {
@@ -73,7 +76,7 @@ body {
 .grid .item:nth-child(2) {
     grid-area: soc;
     background-color: hsl(256, 67%, 59%);
-    border-radius: 12px;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +102,7 @@ body {
 .grid .item:nth-child(3) {
     grid-area: sch;
     background-color: hsl(254, 88%, 90%);
+    border-radius: 1rem;
     padding: 20px;
     overflow: hidden;
     position: relative;
@@ -107,10 +111,13 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.grid .item.item:nth-child(3) img {
+    .grid .item.item:nth-child(3) img {
     position: absolute;
     height: auto;
     right: -100px;
+}
+.grid .item .item:nth-child(3) h2 {
+    font-family: 'DMSans';
 }
 .grid .item:nth-child(4) {
     grid-area: ai;
@@ -125,15 +132,41 @@ body {
 }
 .grid .item:nth-child(5) {
     grid-area: man;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.grid .item:nth-child(5) h2 {
+    font-family: 'DMSans-Medium';
 }
 .grid .item:nth-child(6) {
-   grid-area: mai;
+    grid-area: mai;
+   background-color: hsl(39, 100%, 71%);
+   padding: 20px;
+   overflow: hidden;
+   border-radius: 1rem;
+}
+.grid .item:nth-child(6) img {
+    position: relative;
+    top: 55px;
+}
+.grid .item:nth-child(6) h2 {
+    font-family: 'DMSans';
 }
 .grid .item:nth-child(7) {
     grid-area: fas;
+    background-color: white;
+    border-radius: 1rem;
+}
+.grid .item:nth-child(7) h2, h3 {
+    font-family: 'DMSans';
 }
 .grid .item:nth-child(8) {
     grid-area: gro;
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 1rem;
+}
+.grid .item:nth-child(8) h2 {
+    font-family: 'DMSans';
 }
 .grid .item {
     display: flex;
